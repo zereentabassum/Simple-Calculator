@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Simple Calculator</title>
+</head>
+<body >
+   
+
+   <!-- --------        --------------                  ------ -->
+
+   <h2 class="text-center header pb-3 pt-3">Simple Calculator</h2>
+   <div id="calculatorBody" class="container p-3 mb-2"> 
+    <div class="">  <span id="answer" class="border border-1 fs-4 overflow-auto">0</span>    </div>
+    
+    
+    <div class="row gap-0 fs-4 ">
+      <div class="d-flex justify-content-center">
+          <input type="button" onclick="numericButton('7')" value="7"/>
+          <input type="button" onclick="numericButton('8')" value="8"/>
+          <input type="button"  onclick="numericButton('9')" value="9"/>
+          <input type="button" class="operator-btn" onclick="operatorButton('+')" value="+"/>
+    </div>
+      <div class="d-flex justify-content-center">
+          <input type="button"  onclick="numericButton('4')" value="4"/>
+          <input type="button" onclick="numericButton('5')" value="5"/>
+          <input type="button"  onclick="numericButton('6')" value="6"/>
+        <input type="button" class="operator-btn" onclick="operatorButton('-')" value="-"/>
+    </div>
+      <div class="d-flex justify-content-center">
+          <input type="button"  onclick="numericButton('1')" value="1"/>
+          <input type="button"  onclick="numericButton('2')" value="2"/>
+          <input type="button"  onclick="numericButton('3')" value="3"/>
+          <input type="button" class="operator-btn" onclick="operatorButton('*')" value="×"/>
+    </div>
+      <div class="d-flex justify-content-center">
+
+        <input type="button" class="double-size-btn"  onclick="numericButton('0')" value="0"/>
+         <input type="button" class="" onclick="numericButton('.')" value="."/>
+         <input type="button" class="operator-btn" onclick="operatorButton('/')" value="÷"/>
+        </div>
+         <div class="d-flex justify-content-center">
+          <input id="AC" class=" align-middle double-size-btn" type="button" onclick="clearAll()" value="AC"/>
+         <input id="equals" class="double-size-btn" type="button"  onclick="calculateResult(numberDisplay)" value="="/>
+        
+        </div>
+              
+   
+  </div>
+    </div>
+    
+   
+<!-- --------------              ------------------    -->
+</div>
+
+
+   
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <script src="index.js"></script>
+</body>
+</html>
